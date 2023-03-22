@@ -31,3 +31,24 @@ a:active {
     color:#990000;
     text-decoration:underline;
 }
+
+/* List change color */
+.map ol li {
+    counter-increment: list;
+    list-style-type: none;
+    position: relative;
+}
+
+.map ol li:before {
+    color: red;
+    content: counter(list) ".";
+    left: -32px;
+    position: absolute;
+    text-align: right;
+    width: 26px;
+}
+
+.dec {
+    color:gray;
+    font-weight:normal;
+}
